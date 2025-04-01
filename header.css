@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    height: 150px;
+    
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.bgred {
+    background-color:white;/* Custom color */
+}
+
+
+
+/* Logo */
+.logo {
+    height: 120px;
+  margin-top: 20px;;
+    width:180px;
+}
+
+/* Icons */
+.search-icon, .login-icon {
+    font-size: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* Sections */
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color:black;
+    padding:0px;
+    height:50px;
+}
+
+.section-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+/* Dropdown on Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 20px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar-item {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+.submenu {
+    display: none;
+    padding-left: 15px;
+}
+
+.sidebar-item.active .submenu {
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Show Sidebar */
+.sidebar.show {
+    left: 0;
+}
+
+
