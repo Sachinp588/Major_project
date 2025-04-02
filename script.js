@@ -1,29 +1,30 @@
-// Optional JS functionality for dropdown hover interaction (already included in CSS)
+document.addEventListener("DOMContentLoaded", function () {
+    const sidebar = document.getElementById("sidebar");
+    const menuToggle = document.getElementById("menu-toggle");
+    const closeSidebar = document.querySelector(".close-btn");
+    const sidebarItems = document.querySelectorAll(".sidebar-item");
 
-document.addEventListener('DOMContentLoaded', function () {
-    const dropdowns = document.querySelectorAll('.dropdown');
-    
-    dropdowns.forEach(function(dropdown) {
-        dropdown.addEventListener('mouseenter', function() {
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
-            dropdownContent.style.display = 'block';
-        });
-        
-        dropdown.addEventListener('mouseleave', function() {
-            const dropdownContent = dropdown.querySelector('.dropdown-content');
-            dropdownContent.style.display = 'none';
+    // Toggle Sidebar
+    menuToggle.addEventListener("click", function () {
+        sidebar.classList.add("show");
+    });
+
+    closeSidebar.addEventListener("click", function () {
+        sidebar.classList.remove("show");
+    });
+
+    // Toggle Submenu
+    sidebarItems.forEach(item => {
+        item.addEventListener("click", function () {
+            this.classList.toggle("active");
         });
     });
-});
-
-
-
-
-
-// You can add any interactivity here if needed, such as click events.
-document.querySelectorAll('.section').forEach(section => {
-    section.addEventListener('click', () => {
-        alert('You clicked on ' + section.id);
+   //circle section
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            navCollapse.style.display = "flex";
+        } else {
+            navCollapse.style.display = "none";
+        }
     });
 });
-
