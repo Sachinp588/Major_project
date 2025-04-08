@@ -11,26 +11,33 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg  bgred">
-    <div class="container-fluid d-flex align-items-center">
-        <!-- Sidebar Toggle Button (For Extra Small Screens) -->
+<nav class="navbar navbar-expand-lg bgred">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+        <!-- Sidebar Toggle Button -->
         <button class="btn btn-light d-lg-none top-0 start-0 m-2" id="menu-toggle" style="z-index: 1100;">
             <i class="fas fa-bars"></i>
         </button>
 
-        <!-- Logo (Centered) -->
+        <!-- Logo -->
         <div class="mx-auto">
-            <img src="logo_thememyparty.avif" alt="Logo" class="logo">
+            <img src="major_project_images/logo_thememyparty.avif" alt="Logo" class="logo">
         </div>
 
         <!-- Right Icons -->
-        <div class= "gap-4 d-flex align-items-center">
-            <i class="fa-solid fa-magnifying-glass fa-lg" style="color: black;"></i>
-            <i class="fa-solid fa-user fa-lg" style="color: black;"></i>
-            <i class="fa-regular fa-cart-shopping fa-lg" style="color: #000000;"></i>
+        <div class="icon-bar d-flex align-items-center gap-3">
+            <i class="fas fa-user" title="Login"></i>
+            <i class="fas fa-shopping-cart" title="Cart"></i>
+            <i class="fas fa-search" id="search-icon" title="Search"></i>
         </div>
     </div>
+
+    <!-- 🔍 Search Bar (Hidden by default, shown when search icon clicked) -->
+    <div class="search-bar-container" id="search-bar-container">
+        <input type="text" placeholder="Search..." class="form-control" />
+        <i class="fas fa-times" id="close-search" title="Close"></i>
+    </div>
 </nav>
+
 
 <!-- Sections (Desktop View) -->
 <div class="section-container d-none d-lg-flex ">
@@ -136,62 +143,62 @@
   <div class="section-con">
       <div class="section" id="kids-birthday">
           <div class="circle">
-            <a href="kids_birthday.html" class="anchor"><img src="kids birthday.webp" alt="kids-birthday"></a>
+            <a href="kids_birthday.html" class="anchor"><img src="major_project_images/kids birthday.webp" alt="kids-birthday"></a>
           </div>
           <p>Kids Birthday</p>
       </div>
       <div class="section" id="milestone-birthday">
           <div class="circle">
-            <a href="milestone_birthday.html" class="anchor"><img src="milestone-birthday..webp" alt="milestone_birthday"></a>
+            <a href="milestone_birthday.html" class="anchor"><img src="major_project_images/milestone-birthday..webp" alt="milestone_birthday"></a>
           </div>
           <p>Milestone Birthday</p>
       </div>
       <div class="section" id="baby-shower">
           <div class="circle">
-            <a href="baby_shower.html"class="anchor"><img src="baby_shower.webp" alt="baby-shower"></a>
+            <a href="baby_shower.html"class="anchor"><img src="major_project_images/baby_shower.webp" alt="baby-shower"></a>
           </div>
           <p>Baby Shower</p>
       </div>
       <div class="section" id="baby-welcome">
           <div class="circle">
-            <a href="baby_welcome.html" class="anchor"><img src="baby welcome.webp" alt="baby-welcome"></a>
+            <a href="baby_welcome.html" class="anchor"><img src="major_project_images/baby welcome.webp" alt="baby-welcome"></a>
           </div>
           <p>Baby Welcome</p>
       </div>
       <div class="section" id="baby-first-ceremony">
           <div class="circle">
-            <a href="baby_first_ceremony.html" class="anchor"><img src="baby_first.webp" alt="baby-first-ceremony"></a>
+            <a href="baby_first_ceremony.html" class="anchor"><img src="major_project_images/baby_first.webp" alt="baby-first-ceremony"></a>
           </div>
           <p>Baby First Ceremony</p>
       </div>
 
       <div class="section" id="chalk-board">
           <div class="circle">
-            <a href="chalk_board.html" class="anchor"><img src="Baby_Chalkboard.webp" alt="chalk-board"></a>
+            <a href="chalk_board.html" class="anchor"><img src="major_project_images/Baby_Chalkboard.webp" alt="chalk-board"></a>
           </div>
           <p>Chalk Board</p>
       </div>
       <div class="section" id="anniversary">
           <div class="circle">
-            <a href="anniversary.html" class="anchor"><img src="Happy_Anniversary.webp" alt="Happy_Anniversary"></a>
+            <a href="anniversary.html" class="anchor"><img src="major_project_images/Happy_Anniversary.webp" alt="Happy_Anniversary"></a>
           </div>
           <p>Anniversary</p>
       </div>
       <div class="section" id="festivals">
           <div class="circle">
-            <a href="festival.html" class="anchor"><img src="Festivals.webp" alt="festivals"></a>
+            <a href="festival.html" class="anchor"><img src="major_project_images/Festivals.webp" alt="festivals"></a>
           </div>
           <p>Festivals</p>
       </div>
       <div class="section" id="party-decoration">
           <div class="circle">
-            <a href="party_decoration.html" class="anchor"><img src="Party_Decorations.webp" alt="party-decoration"></a>
+            <a href="party_decoration.html" class="anchor"><img src="major_project_images/Party_Decorations.webp" alt="party-decoration"></a>
           </div>
           <p>Party Decoration</p>
       </div>
       <div class="section" id="balloons">
           <div class="circle">
-            <a href="balloon.html" class="anchor"><img src="Star_Ballooon.webp" alt="ballons"></a>
+            <a href="balloon.html" class="anchor"><img src="major_project_images/Star_Ballooon.webp" alt="ballons"></a>
           </div>
           <p>Balloons</p>
       </div>
@@ -202,12 +209,12 @@
 <p class="heading">Why LB Decorators</p>
   <div class="container">
          
-    <img src="image1.webp" alt="Image 1">
-    <img src="fastdelivery.webp" alt="Image 2">
-    <img src="image3.webp" alt="Image 3">
-    <img src="image4.webp" alt="Image 4">
-    <img src="image5.webp" alt="Image 5">
-    <img src="image6.webp" alt="Image 6">
+    <img src="major_project_images/image1.webp" alt="Image 1">
+    <img src="major_project_images/fastdelivery.webp" alt="Image 2">
+    <img src="major_project_images/image3.webp" alt="Image 3">
+    <img src="major_project_images/image4.webp" alt="Image 4">
+    <img src="major_project_images/image5.webp" alt="Image 5">
+    <img src="major_project_images/image6.webp" alt="Image 6">
 </div>
 
 
@@ -217,27 +224,29 @@
     <div class="carousel-container">
         <div class="carousel">
             <!--<img src="avengers.avif" alt="Image 1">-->
-            <img src="lion_king.avif" alt="Image 2">
-            <img src="disneyprincess.avif" alt="Image 3">
-            <img src="avengers.avif" alt="Image 4">
-            <img src="moana.avif" alt="Image 5">
-            <img src="monkey.avif" alt="Image 6">
-            <img src="babyfish.avif" alt="Image 7">
-            <img src="super_mario.avif" alt="Image 8">
-            <img src="moana.avif" alt="Image 9">
+            <img src="major_project_images/lion_king.avif" alt="Image 2">
+            <img src="major_project_images/disneyprincess.avif" alt="Image 3">
+            <img src="major_project_images/avengers.avif" alt="Image 4">
+            <img src="major_project_images/moana.avif" alt="Image 5">
+            <img src="major_project_images/monkey.avif" alt="Image 6">
+            <img src="major_project_images/babyfish.avif" alt="Image 7">
+            <img src="major_project_images/super_mario.avif" alt="Image 8">
+            <img src="major_project_images/moana.avif" alt="Image 9">
             <!-- Duplicate images for smooth transition -->
             <!--<img src="cocomelon.avi" alt="Image 1">-->
-            <img src="lion_king.avif" alt="Image 2">
-            <img src="disneyprincess.avif" alt="Image 3">
-            <img src="avengers.avif" alt="Image 4">
-            <img src="moana.avif" alt="Image 5">
-            <img src="monkey.avif" alt="Image 6">
-            <img src="babyfish.avif" alt="Image 7">
-            <img src="super_mario.avif" alt="Image 8">
-            <img src="moana.avif" alt="Image 9">
-            <img src="babyfish.avif" alt="Image 10">
+            <img src="major_project_images/moana.avif" alt="Image 2">
+            <img src="major_project_images/disneyprincess.avif" alt="Image 3">
+            <img src="major_project_images/avengers.avif" alt="Image 4">
+            <img src="major_project_images/moana.avif" alt="Image 4">
+            <img src="major_project_images/disneyprincess.avif" alt="Image 5">
+            <img src="major_project_images/monkey.avif" alt="Image 6">
+            <img src="major_project_images/moana.avif" alt="Image 7">
+            <img src="major_project_images/super_mario.avif" alt="Image 8">
+            <img src="major_project_images/monkey.avif" alt="Image 9">
+            <img src="major_project_images/moana.avif" alt="Image 7">
+            <img src="major_project_images/super_mario.avif" alt="Image 10">
 
-
+            major_project_images/moana.avif
             
         </div>
     </div>
@@ -284,4 +293,3 @@
 
 </body>
 </html>
-
